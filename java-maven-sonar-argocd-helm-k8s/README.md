@@ -47,6 +47,9 @@ Steps:
 
     5. Set up Argo CD:
         Install Argo CD on the Kubernetes cluster.
+        Add route in your windows 10 machine using the VM IP and the gateway and subnet mask of the minikube cluster
+      ########  C:\WINDOWS\system32>route ADD 192.168.49.0 MASK 255.255.255.0 192.168.1.250
+ OK!
         Set up a Git repository for Argo CD to track the changes in the Helm charts and Kubernetes manifests.
         Create a Helm chart for the Java application that includes the Kubernetes manifests and Helm values.
         Add the Helm chart to the Git repository that Argo CD is tracking.
